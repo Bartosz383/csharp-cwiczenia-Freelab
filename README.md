@@ -1,1 +1,1 @@
-# C-cwiczenia-Freelab
+# C# ćwiczenia Freelab

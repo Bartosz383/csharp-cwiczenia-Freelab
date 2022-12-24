@@ -1,0 +1,10 @@
+using System;
+public class Program
+{
+ public static void Main()
+ {
+ int[] naszaTablica = new int[5];
+ naszaTablica[5] = 1;
+ Console.WriteLine("Element tablicy o indeksie 5 to: " + naszaTablica[10]);
+ }
+}

@@ -1,0 +1,12 @@
+// Utworzenie tablicy
+
+using System;
+public class Program
+{
+ public static void Main()
+ {
+   int[] naszaTablica = new int[4];                                         // utworzenie nowej, jednowymiarowej, czteroelementowej tablicy typu int
+   naszaTablica[0] = 10;                                                    // pierwszy element tablicy ma wartość 10 (numerujemy, liczymy od zera)
+   Console.WriteLine("Pierwszy element tablicy: " + naszaTablica[0]);       // wyświetlenie tablicy
+ }
+}

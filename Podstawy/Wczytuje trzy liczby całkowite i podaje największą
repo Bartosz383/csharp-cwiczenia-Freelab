@@ -1,0 +1,23 @@
+using System;
+
+namespace ConsoleApplication  // Przestrzeń nazw
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Podaj pierwszą liczbę:");
+            int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj drugą liczbę:");
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Podaj trzecią liczbę:");
+            int c = int.Parse(Console.ReadLine());
+
+            int max = a;
+            if (b > max) max = b;
+            if (c > max) max = c;
+
+            Console.WriteLine("Największa z podanych liczb to: {0}", max);
+        }
+    }
+}

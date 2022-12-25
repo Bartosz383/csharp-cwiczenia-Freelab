@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+
+namespace ConsoleApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Lista pytań i odpowiedzi
+            List<Tuple<string, string>> pytania = new List<Tuple<string, string>>()
+            {
+                new Tuple<string, string>("Jaki jest największy kontynent na Ziemi?", "Azja"),
+                new Tuple<string, string>("Jaka jest stolica Polski?", "Warszawa"),
+                new Tuple<string, string>("Ile miesięcy ma rok?", "12"),
+                new Tuple<string, string>("Jaki jest symbol chemiczny platyny?", "Pt"),
+            };
+
+            int punkty = 0;
+
+            Console.WriteLine("Witaj w quizzie! Odpowiedz na poniższe pytania:");
+
+            foreach (var pytanie in pytania)
+            {
+                Console.WriteLine(pytanie.Item1);
+                string odpowiedz = Console.ReadLine();
+                if (odpowiedz == pytanie.Item2)
+                {
+                    punkty++;
+                }
+            }
+
+            Console.WriteLine("Zdobyłeś {0} punktów.", punkty);
+        }
+    }
+}

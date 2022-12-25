@@ -15,8 +15,11 @@ public class Program
   // odejmowanie
   d = c - a;
   
+  int pole = a * b;
+  
   // wyświetlanie na ekranie
   Console.WriteLine("Suma a oraz b to: {0}", c);    // "{0}" zastępowane jest przez zmienną podaną po przecinku, czyli w naszym przypadku "c"
   Console.WriteLine("Roznica c oraz a to: {0}", d);
+  Console.WriteLine("Pole prostokąta o bokach {0} i {1} wynosi {2}.", a, b, pole);
  }
 }

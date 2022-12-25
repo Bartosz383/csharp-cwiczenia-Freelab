@@ -1,0 +1,22 @@
+using System;
+public class Program
+{
+ public static void Main()
+ {
+  // zmienne
+  int a = 2;
+  int b = 3;
+  int c;
+  int d;
+  
+  // dodawanie
+  c = a + b;
+  
+  // odejmowanie
+  d = c - a;
+  
+  // wyświetlanie na ekranie
+  Console.WriteLine("Suma a oraz b to: {0}", c);    // "{0}" zastępowane jest przez zmienną podaną po przecinku, czyli w naszym przypadku "c"
+  Console.WriteLine("Roznica c oraz a to: {0}", d);
+ }
+}

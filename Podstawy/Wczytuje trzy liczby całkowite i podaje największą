@@ -1,6 +1,6 @@
 using System;
 
-namespace ConsoleApplication  // Przestrzeń nazw
+namespace PrzestrzenNazw // Przestrzeń nazw
 {
     class Program
     {

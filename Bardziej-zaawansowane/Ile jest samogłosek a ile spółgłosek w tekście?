@@ -1,0 +1,31 @@
+using System;
+
+namespace ConsoleApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Podaj ciąg znaków:");
+            string tekst = Console.ReadLine();
+
+            int samogloski = 0;
+            int spolgloski = 0;
+
+            for (int i = 0; i < tekst.Length; i++)
+            {
+                if (tekst[i] == 'a' || tekst[i] == 'e' || tekst[i] == 'i' || tekst[i] == 'o' || tekst[i] == 'u' || tekst[i] == 'y')
+                {
+                    samogloski++;
+                }
+                else if (char.IsLetter(tekst[i]))
+                {
+                    spolgloski++;
+                }
+            }
+
+            Console.WriteLine("Ilość samogłosek: {0}", samogloski);
+            Console.WriteLine("Ilość spółgłosek: {0}", spolgloski);
+        }
+    }
+}

@@ -1,0 +1,46 @@
+using System;
+namespace ValueTypeTest {
+      
+class GeeksforGeeks {
+      
+    static void Main()
+    {
+          
+        // znak
+        char a = 'G';
+  
+        // liczba całkowita
+        int i = 634;
+  
+        // liczba całkowita nie większa niż 87878787878, jeżeli damy większą liczbę wyskoczy błąd
+        short s = 21;
+          
+       
+        // short s1 = 87878787878;
+  
+        // większa liczba całkowita
+        long l = 4564;
+  
+       
+        // różny spoósb zapisywania liczb z przecinkiem
+        double d = 8.358674532;
+  
+        float f = 3.7330645f;
+  
+        decimal dec = 389.5m;
+        
+        // prawda / fałsz
+        bool b = true;
+        if (b == true)
+          Console.WriteLine("Czesc, wyglada na to, ze to prawda");
+  
+        Console.WriteLine("char: " + a);
+        Console.WriteLine("integer: " + i);
+        Console.WriteLine("short: " + s);
+        Console.WriteLine("long: " + l);
+        Console.WriteLine("float: " + f);
+        Console.WriteLine("double: " + d);
+        Console.WriteLine("decimal: " + dec);
+    }
+}
+}

@@ -1,0 +1,21 @@
+using System;
+
+namespace ConsoleApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Obliczanie pola trójkąta");
+
+            Console.Write("Podaj długość podstawy: ");
+            double b = double.Parse(Console.ReadLine());
+
+            Console.Write("Podaj wysokość: ");
+            double h = double.Parse(console.ReadLine());
+
+            double area = (b * h) / 2;
+            Console.WriteLine($"Pole trójkąta wynosi {area}");
+        }
+    }
+}

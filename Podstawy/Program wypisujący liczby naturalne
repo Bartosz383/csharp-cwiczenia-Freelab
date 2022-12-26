@@ -1,0 +1,16 @@
+using System;
+
+namespace ConsoleApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 1; i <= 10; i++)   // Ta 10 oznacza ile liczb ma być wypisanych
+            {
+                Console.WriteLine();
+                Console.WriteLine(i);
+            }
+        }
+    }
+}

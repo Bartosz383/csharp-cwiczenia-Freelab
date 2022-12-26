@@ -17,4 +17,6 @@
 
 [Strona WWW](http://wrzesnia.freelab.edu.pl)
 
+[YouTube](https://www.youtube.com/@freelab.wrzesnia/videos)
+
 [Instagram](https://www.instagram.com/freelab_wrzesnia/)

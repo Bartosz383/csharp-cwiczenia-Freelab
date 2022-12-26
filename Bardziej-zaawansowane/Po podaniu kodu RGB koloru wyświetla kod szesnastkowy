@@ -1,0 +1,22 @@
+using System;
+using System.Drawing;
+
+namespace ConsoleApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Podaj kod RGB koloru (np. 255 0 0 dla czerwonego, każda wartość w nowej linii):");
+
+            int r = int.Parse(Console.ReadLine());
+            int g = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+
+            Color kolor = Color.FromArgb(r, g, b);
+            string nazwa = kolor.Name;
+
+            Console.WriteLine("Nazwa koloru: {0}", nazwa);
+        }
+    }
+}

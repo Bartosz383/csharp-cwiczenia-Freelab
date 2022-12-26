@@ -1,0 +1,21 @@
+using System;
+
+namespace ConsoleApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Podaj n:");
+            int n = int.Parse(Console.ReadLine());
+            int a = 0, b = 1;
+            for (int i = 0; i < n; i++)
+            {
+                int c = a + b;
+                a = b;
+                b = c;
+            }
+            Console.WriteLine("{0}-ty element ciągu Fibonacciego wynosi: {1}", n, a);
+        }
+    }
+}

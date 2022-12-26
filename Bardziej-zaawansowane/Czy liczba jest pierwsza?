@@ -1,0 +1,32 @@
+using System;
+
+namespace ConsoleApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Podaj liczbę: ");
+            int number = int.Parse(Console.ReadLine());
+
+            bool isPrime = true;
+            for (int i = 2; i < number; i++)
+            {
+                if (number % i == 0)
+                {
+                    isPrime = false;
+                    break;
+                }
+            }
+
+            if (isPrime)
+            {
+                Console.WriteLine("Liczba jest pierwsza");
+            }
+            else
+            {
+                Console.WriteLine("Liczba nie jest pierwsza");
+            }
+        }
+    }
+}

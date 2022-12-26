@@ -1,0 +1,39 @@
+using System;
+
+namespace Calculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Pobieramy dane od użytkownika
+            Console.Write("Wprowadź pierwszą liczbę: ");
+            double a = double.Parse(Console.ReadLine());
+            Console.Write("Wprowadź drugą liczbę: ");
+            double b = double.Parse(Console.ReadLine());
+            Console.Write("Wprowadź działanie (+, -, *, /): ");
+            char op = char.Parse(Console.ReadLine());
+
+            // Obliczamy wynik
+            double result = 0;
+            switch (op)
+            {
+                case '+':
+                    result = a + b;
+                    break;
+                case '-':
+                    result = a - b;
+                    break;
+                case '*':
+                    result = a * b;
+                    break;
+                case '/':
+                    result = a / b;
+                    break;
+            }
+
+            // Wyświetlamy wynik
+            Console.WriteLine($"Wynik: {result}");
+        }
+    }
+}

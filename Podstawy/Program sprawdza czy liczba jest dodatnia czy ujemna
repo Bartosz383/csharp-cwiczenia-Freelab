@@ -1,0 +1,26 @@
+using System;
+
+namespace ConsoleApplication
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Podaj liczbę: ");
+            int number = int.Parse(Console.ReadLine());
+
+            if (number > 0)
+            {
+                Console.WriteLine("Liczba jest dodatnia");
+            }
+            else if (number < 0)
+            {
+                Console.WriteLine("Liczba jest ujemna");
+            }
+            else
+            {
+                Console.WriteLine("Liczba jest równa zero. Zero nie jest ani dodatnie ani ujemne");
+            }
+        }
+    }
+}

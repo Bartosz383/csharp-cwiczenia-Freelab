@@ -1,0 +1,56 @@
+using System;
+
+namespace CurrencyConverter
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Pobieramy dane od użytkownika
+            Console.Write("Wprowadź kwotę: ");
+            double amount = double.Parse(onsole.ReadLine());
+            Console.Write("Wprowadź walutę źródłową: ");
+            string sourceCurrency = Console.ReadLine();
+            Console.Write("Wprowadź walutę docelową: ");
+            string targetCurrency = Console.ReadLine();
+
+            // Ustawiamy stałe kursy walut
+            double plnToEurRate = 0.23;
+            double plnToUsdRate = 0.27;
+            double eurToPlnRate = 4.31;
+            double eurToUsdRate = 1.21;
+            double usdToPlnRate = 3.70;
+            double usdToEurRate = 0.83;
+
+            // Konwertujemy walutę
+            double result = 0;
+            if (sourceCurrency == "PLN" && targetCurrency == "EUR")
+            {
+                result = amount * plnToEurRate;
+            }
+            else if (sourceCurrency == "PLN" && targetCurrency == "USD")
+            {
+                result = amount * plnToUsdRate;
+            }
+            else if (sourceCurrency == "EUR" && targetCurrency == "PLN")
+            {
+                result = amount * eurToPlnRate;
+            }
+            else if (sourceCurrency == "EUR" && targetCurrency == "USD")
+            {
+                result = amount * eurToUsdRate;
+            }
+            else if (sourceCurrency == "USD" && targetCurrency == "PLN")
+            {
+                result = amount * usdToPlnRate;
+            }
+            else if (sourceCurrency == "USD" && targetCurrency == "EUR")
+            {
+                result = amount * usdToEurRate;
+            }
+
+            // Wyświetlamy wynik
+            Console.WriteLine($"{amount} {sourceCurrency} = {result} {targetCurrency}");
+        }
+    }
+}

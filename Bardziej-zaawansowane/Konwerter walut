@@ -8,7 +8,7 @@ namespace CurrencyConverter
         {
             // Pobieramy dane od użytkownika
             Console.Write("Wprowadź kwotę: ");
-            double amount = double.Parse(onsole.ReadLine());
+            double amount = double.Parse(Console.ReadLine());
             Console.Write("Wprowadź walutę źródłową: ");
             string sourceCurrency = Console.ReadLine();
             Console.Write("Wprowadź walutę docelową: ");

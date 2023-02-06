@@ -1,0 +1,25 @@
+//Napisz funkcję, która przyjmuje dwa argumenty i zwraca True jeśli oba są równe, a False jeśli są różne.
+
+bool Equal(int a, int b)
+{
+    return a == b;
+}
+
+
+// Napisz funkcję, która przyjmuje trzy argumenty i zwraca True jeśli trzy liczby są równe, a False jeśli są różne.
+bool EqualThree(int a, int b, int c)
+{
+    return a == b && b == c;
+}
+
+// Napisz funkcję, która przyjmuje jeden argument i zwraca True jeśli jest to liczba parzysta, a False jeśli jest nieparzysta.
+bool IsEven(int num)
+{
+    return num % 2 == 0;
+}
+
+// Napisz funkcję, która przyjmuje jeden argument i zwraca True jeśli jest to liczba dodatnia, a False jeśli jest ujemna.
+bool IsPositive(int num)
+{
+    return num > 0;
+}

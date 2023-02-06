@@ -1,0 +1,45 @@
+//Sprawdzenie czy liczba jest dodatnia czy ujemna:
+
+int num;
+Console.Write("Enter a number: ");
+num = Convert.ToInt32(Console.ReadLine());
+
+if (num >= 0)
+{
+    Console.WriteLine(num + " is positive");
+}
+else
+{
+    Console.WriteLine(num + " is negative");
+}
+
+// Sprawdzenie czy liczba jest parzysta czy nieparzysta:
+int num;
+Console.Write("Enter a number: ");
+num = Convert.ToInt32(Console.ReadLine());
+
+if (num % 2 == 0)
+{
+    Console.WriteLine(num + " is even");
+}
+else
+{
+    Console.WriteLine(num + " is odd");
+}
+
+
+//Sprawdzenie czy rok jest przestępny:
+int year;
+Console.Write("Enter a year: ");
+year = Convert.ToInt32(Console.ReadLine());
+
+if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
+{
+    Console.WriteLine(year + " is a leap year");
+}
+else
+{
+    Console.WriteLine(year + " is not a leap year");
+}
+
+

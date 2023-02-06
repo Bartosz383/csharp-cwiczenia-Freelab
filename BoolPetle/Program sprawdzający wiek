@@ -1,0 +1,21 @@
+int age;
+string name;
+
+Console.Write("Podaj swoje imię: ");
+name = Console.ReadLine();
+
+Console.Write("Podaj swój wiek: ");
+age = Convert.ToInt32(Console.ReadLine());
+
+if (age < 18)
+{
+    Console.WriteLine("Jesteś za młody na używanie tego programu");
+}
+else if (age >= 18 && age < 30)
+{
+    Console.WriteLine("Witaj " + name + ", jesteś młodym duchem");
+}
+else
+{
+    Console.WriteLine("Witaj " + name + ", dojrzałe życie jest przed Tobą");
+}

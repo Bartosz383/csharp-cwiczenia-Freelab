@@ -1,0 +1,42 @@
+// Wypisanie liczb od 1 do 10:
+int i = 1;
+while (i <= 10)
+{
+    Console.WriteLine(i);
+    i++;
+}
+
+//Sumowanie liczb od 1 do 100:
+int sum = 0;
+int i = 1;
+while (i <= 100)
+{
+    sum += i;
+    i++;
+}
+Console.WriteLine("Sum of 1 to 100 is: " + sum);
+
+
+//Wypisywanie tylko liczb nieparzystych od 1 do 20:
+int i = 1;
+while (i <= 20)
+{
+    if (i % 2 != 0)
+    {
+        Console.WriteLine(i);
+    }
+    i++;
+}
+
+
+// Pobieranie liczb od użytkownika aż do momentu, gdy wprowadzona liczba będzie równa 0:
+int num = -1;
+while (num != 0)
+{
+    Console.Write("Enter a number (0 to quit): ");
+    num = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("You entered: " + num);
+}
+
+
+

@@ -1,0 +1,41 @@
+// Wypisanie liczb od 1 do 10:
+for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine(i);
+}
+
+// Sumowanie liczb od 1 do 100
+int sum = 0;
+for (int i = 1; i <= 100; i++)
+{
+    sum += i;
+}
+Console.WriteLine("Sum of 1 to 100 is: " + sum);
+
+// Wypisywanie tylko liczb nieparzystych od 1 do 20:
+for (int i = 1; i <= 20; i++)
+{
+    if (i % 2 != 0)
+    {
+        Console.WriteLine(i);
+    }
+}
+
+// Wypisanie elementów tablicy od 0 do jej długości:
+int[] numbers = {1, 2, 3, 4, 5};
+for (int i = 0; i < numbers.Length; i++)
+{
+    Console.WriteLine(numbers[i]);
+}
+
+Wypisanie tylko elementów tablicy, które są większe niż 5:
+int[] numbers = {1, 6, 3, 8, 5};
+for (int i = 0; i < numbers.Length; i++)
+{
+    if (numbers[i] > 5)
+    {
+        Console.WriteLine(numbers[i]);
+    }
+}
+
+

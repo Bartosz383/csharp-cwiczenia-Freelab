@@ -1,0 +1,58 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Witaj w grze tekstowej!");
+        Console.WriteLine("Twoim zadaniem jest znaleźć magiczny kamień.");
+        Console.WriteLine("Aby to zrobić, musisz wybrać odpowiednie ścieżki.");
+        Console.WriteLine("Podczas gry będziesz miał/a możliwość podjęcia decyzji.");
+
+        // Rozpoczęcie gry
+        Console.WriteLine("Jesteś przed wejściem do tajemniczej jaskini.");
+        Console.WriteLine("Co robisz?");
+        Console.WriteLine("1. Wchodzisz do jaskini");
+        Console.WriteLine("2. Zostajesz na zewnątrz");
+
+        string wybor = Console.ReadLine();
+
+        if (wybor == "1")
+        {
+            Console.WriteLine("Znalazłeś się w ciemnym korytarzu.");
+            Console.WriteLine("Co robisz?");
+            Console.WriteLine("1. Idziesz w lewo");
+            Console.WriteLine("2. Idziesz w prawo");
+
+            wybor = Console.ReadLine();
+
+            if (wybor == "1")
+            {
+                Console.WriteLine("Niestety, zszedłeś z drogi i zgubiłeś się.");
+                Console.WriteLine("Koniec gry.");
+            }
+            else if (wybor == "2")
+            {
+                Console.WriteLine("Doszedłeś do sali ze skarbami!");
+                Console.WriteLine("Gratulacje, znalazłeś magiczny kamień!");
+                Console.WriteLine("Koniec gry.");
+            }
+            else
+            {
+                Console.WriteLine("Nieprawidłowy wybór. Koniec gry.");
+            }
+        }
+        else if (wybor == "2")
+        {
+            Console.WriteLine("Niestety, nic tu nie znajdziesz.");
+            Console.WriteLine("Koniec gry.");
+        }
+        else
+        {
+            Console.WriteLine("Nieprawidłowy wybór. Koniec gry.");
+        }
+
+        Console.WriteLine("Dzięki za grę!");
+        Console.ReadLine();
+    }
+}
